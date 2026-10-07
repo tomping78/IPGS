@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import './gs-main.css'
 
 export default function Gsmain() {
@@ -647,11 +648,26 @@ export default function Gsmain() {
 
           <div className="gs-button-wrap">
             <p className="gs-button">
-              <button class="custom-btn btn-gs">DRM 해제</button>
-              <button class="custom-btn btn-gs">송수신 IP관리</button>
-              <button class="custom-btn btn-gs">DRM 해제</button>
-              <button class="custom-btn btn-gs">DRM 해제</button>
-              <button class="custom-btn btn-gs">DRM 해제</button>
+              <Link to="/drm-release" className="custom-btn btn-gs">
+                <img src="/icon01.png" alt="DRM 해제" className="btn-icon" />
+                <span>DRM 해제</span>
+              </Link>
+              <Link to="/ip-management" className="custom-btn btn-gs">
+                <img src="/icon01.png" alt="송수신 IP관리" className="btn-icon" />
+                <span>송수신 IP관리</span>
+              </Link>
+              <Link to="/drm-release" className="custom-btn btn-gs">
+                <img src="/icon01.png" alt="DRM 해제" className="btn-icon" />
+                <span>DRM 해제</span>
+              </Link>
+              <Link to="/drm-release" className="custom-btn btn-gs">
+                <img src="/icon01.png" alt="DRM 해제" className="btn-icon" />
+                <span>DRM 해제</span>
+              </Link>
+              <Link to="/drm-release" className="custom-btn btn-gs">
+                <img src="/icon01.png" alt="DRM 해제" className="btn-icon" />
+                <span>DRM 해제</span>
+              </Link>
             </p>
           </div>
         </div>
