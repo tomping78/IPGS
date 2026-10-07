@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import './gs-main.css'
 
-export default function App() {
+export default function Gsmain() {
   useEffect(() => {
     if (typeof window.p5 === "undefined") {
       console.error("p5.js is not loaded yet");
@@ -35,7 +35,7 @@ export default function App() {
         showSegments: true,
         showEndings: true,
         showDoubleLine: true,
-        pulseShape: 'rect' // 'rect' (사각형) or 'circle' (원형)
+        pulseShape: 'circle'
       };
 
       const l = [
@@ -135,7 +135,7 @@ export default function App() {
           h = true;
         }
 
-        for (let x_idx = 0; x_idx < t.length; ) {
+        for (let x_idx = 0; x_idx < t.length;) {
           x_idx = 0;
           for (let P in t) {
             const E = t[P];
